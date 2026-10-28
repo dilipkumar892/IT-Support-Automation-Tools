@@ -1,0 +1,43 @@
+{
+  "app_name": "IT Support Automation Suite",
+  "version": "1.1.0",
+  "theme": "dark",
+  "safety_mode": true,
+  "require_confirmation_for_repairs": true,
+  "default_timeout_seconds": 60,
+  "extended_timeout_seconds": 300,
+  "database_path": "data/it_support.db",
+  "log_file_path": "logs/it_support.log",
+  "export_directory": "reports_export",
+  "network": {
+    "ping_targets": ["1.1.1.1", "8.8.8.8", "www.google.com"],
+    "dns_targets": ["google.com", "microsoft.com"],
+    "http_check_url": "https://www.msftconnecttest.com/connecttest.txt",
+    "ping_timeout_seconds": 3
+  },
+  "allowlisted_tasks": [
+    "collect_system_info",
+    "run_network_diagnostics",
+    "scan_installed_software",
+    "analyze_disk_space",
+    "clean_disk_junk",
+    "clean_system_junk",
+    "sfc_verify_only",
+    "sfc_repair",
+    "dism_check_health",
+    "dism_scan_health",
+    "dism_restore_health",
+    "check_windows_updates",
+    "reset_windows_update_components",
+    "audit_event_logs",
+    "audit_startup_programs",
+    "flush_dns_cache",
+    "reset_network_stack",
+    "fix_print_spooler",
+    "generate_battery_report",
+    "audit_domain_and_identity",
+    "audit_bitlocker",
+    "generate_ticket_snippet",
+    "prepare_support_bundle"
+  ]
+}
